@@ -1,0 +1,61 @@
+"""
+সব IT department-এর employee বের করো। (done)
+
+যাদের salary NaN, শুধু তাদের দেখাও। (done)
+
+যাদের age NaN, তাদের count বের করো। (done)
+
+Duplicate name remove করো। (done)
+
+প্রতিটি department-এর average salary বের করো।(done)
+
+কোন department-এ সবচেয়ে বেশি employee আছে?(done)
+
+Highest salary কার And  , Lowest salary কার? (done)
+
+Salary-এর mean, median, max, min বের করো।(done)
+
+Join date NaN যাদের, তাদের আলাদা DataFrame বানাও।(done)
+
+Salary NaN হলে mean salary দিয়ে fill করো।(done)
+
+Department NaN হলে "Unknown" দিয়ে fill করো। (done)
+
+HR department-এর average age বের করো। (done)
+
+প্রতিটি department-এর employee count বের করো। (done)
+
+Salary অনুযায়ী descending order-এ sort করো।(done)
+
+Age 30-এর বেশি এবং salary 60000-এর বেশি—এমন employee বের করো। (done)
+
+সব NaN থাকা row delete করো। (done)
+
+id-কে index বানিয়ে আবার reset_index() করো। (done)
+"""
+==============================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

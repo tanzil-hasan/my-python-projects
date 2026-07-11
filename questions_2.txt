@@ -1,0 +1,193 @@
+
+
+🟠 HARD (16–35)
+
+22.
+
+
+23.
+
+Find employees whose Score is among the top five highest scores.
+
+24.
+
+Display employees whose Salary lies between 30000 and 45000.
+
+25.
+
+Find employees whose Department starts with the letter "C".
+
+26.
+
+Display employees whose Name ends with the letter "m".
+
+27.
+
+Display every alternate row.
+
+28.
+
+Display every alternate column.
+
+29.
+
+Reverse the DataFrame.
+
+30.
+
+Find employees whose Salary is greater than Score × 400.
+
+31.
+
+Find the youngest employee having the highest Salary.
+
+32.
+
+Display only those rows where Age is equal to the median Age.
+
+33.
+
+Display employees having duplicate Age values.
+
+34.
+
+Find the employee whose Salary is closest to 40000.
+
+35.
+
+Without changing the original DataFrame, create a report containing only Name, Department and Salary sorted by Salary.
+
+🔴 FAANG INTERVIEW LEVEL (36–60)
+36.
+
+You are given a DataFrame with random indexes. Produce a report sorted by Salary while preserving the original DataFrame unchanged.
+
+37.
+
+Return the top three youngest employees from the CSE department.
+
+38.
+
+Find employees whose Salary is in the top 20% of the dataset.
+
+39.
+
+Display employees whose Score belongs to the highest three distinct Score values.
+
+40.
+
+Create a report containing:
+
+Name
+Department
+Salary
+Score
+
+Only employees satisfying all business rules should appear:
+
+Salary > 35000
+Score > 80
+Working Hour ≥ 8
+Department ∈ {CSE, IT, EEE}
+
+Sort by Salary descending.
+
+41.
+
+Return employees who satisfy exactly one of these conditions:
+
+Salary > 40000
+Score > 90
+42.
+
+Display employees whose Salary ranking is between 3rd and 6th.
+
+43.
+
+Find employees who have both Salary and Score above their respective averages.
+
+44.
+
+Return the youngest employee from each Department.
+
+(Later you'll solve this with groupby(). For now, solve it without groupby() if possible.)
+
+45.
+
+Find employees whose Salary is greater than every employee in the BBA department.
+
+46.
+
+Create a report where every employee is sorted by:
+
+Department
+Score (descending)
+Salary (descending)
+Age (ascending)
+47.
+
+Without using loops, replace the Salary of every employee whose Score is below 75 with zero.
+
+48.
+
+Without creating intermediate variables, produce a report of the top five employees satisfying all business conditions.
+
+49.
+
+Reverse the rows, then display only the first five rows and the first three columns.
+
+50.
+
+Return employees whose Salary differs from the average Salary by less than 3000.
+
+51.
+
+Display employees whose Age appears more than once.
+
+52.
+
+Find the employee having the second highest Salary.
+
+53.
+
+Find the employee having the second lowest Score.
+
+54.
+
+Create a report sorted by Salary descending and display only rows ranked 4–8.
+
+55.
+
+Return only the rows where all numeric columns are greater than their respective column medians.
+
+56.
+
+Return employees whose Salary is above the Department average.
+
+(Later solve with groupby(); for now, think creatively.)
+
+57.
+
+Without changing the original DataFrame, replace all HR salaries with zero in the output only.
+
+58.
+
+Display the transpose of the top five highest-paid employees.
+
+59.
+
+Create a report containing only duplicate rows based on Age and Department.
+
+60. ⭐ FINAL FAANG CHALLENGE
+
+Produce a business report satisfying all the following requirements:
+
+Age between 21 and 25
+Department is CSE, IT or EEE
+Salary above the dataset average
+Score above the dataset median
+Working Hour ≥ 8
+Sort by Salary (descending)
+Then by Score (descending)
+Show only Name, Department, Salary and Score
+Return only the first five records
