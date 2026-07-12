@@ -303,8 +303,8 @@ Name: 1005, dtype: object
 
 #====================================================================================================================
 #Return the top three youngest employees from the CSE department.
-#print(df.sort_values(by='dept age'.title().split() , ascending=[True,True]))
-print(df.sort_values(by='dept age'.title().split() , ascending=True).loc[ df['Dept'].isin(['CSE']) , : ])
+#print(df.sort_values(by='dept age'.title().split() , ascending=[True,True]).head(3))
+#print(df.sort_values(by='dept age'.title().split() , ascending=True).loc[ df['Dept'].isin(['CSE']) , : ])
 
 
 

@@ -1,24 +1,6 @@
 
 
-🟠 HARD (16–35)
-
-
-
-Display employees having duplicate Age values.
-
-34.
-
-Find the employee whose Salary is closest to 40000.
-
-
 🔴 FAANG INTERVIEW LEVEL (36–60)
-36.
-
-You are given a DataFrame with random indexes. Produce a report sorted by Salary while preserving the original DataFrame unchanged.
-
-37.
-
-Return the top three youngest employees from the CSE department.
 
 38.
 
