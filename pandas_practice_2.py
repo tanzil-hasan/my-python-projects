@@ -23,9 +23,9 @@ data = {
     ],
 
     "Age": [
-        22,25,21,23,24,
-        22,26,20,23,21,
-        29,27,30,26,28,
+        29,25,21,23,24,
+        22,26,20,23,22,
+        30,27,30,26,28,
         24,25,27,22,31
     ],
 
@@ -200,8 +200,121 @@ df.set_index('Employee_ID' , inplace=True )
 
 #===========================================================================================
 #Display only Name, Salary and Score of the top five highest paid employees.
-newdf = df.sort_values(by=["Salary","Score"] , ascending=[False , False])
-#print(newdf.loc[ newdf['Salary'].isin([]) , ['Name' , 'Salary' , 'Score']])
+#newdf = df.sort_values(by=["Salary","Score"] , ascending=[False , False])
+#print(newdf['Salary'])
+#print(newdf.loc[ newdf['Salary'].between(72000,100000), ['Name' , 'Salary' , 'Score']])
+
+#===========================================================================================
+#Display employees whose Salary lies between 30000 and 45000.
+#print(df[df['Salary'].between(30000,45000)])
+#===========================================================================================
+#Find employees whose Department starts with the letter "C".
+# names = [dept_name for dept_name in df['Dept'] if dept_name[0]=='C' ]
+# print(names)
+# print(df[df['Dept'].isin(names)])
+
+#===========================================================================================
+#Display employees whose Name ends with the letter "m".
+# employ = [name for name in df['Name'] if name[len(name)-1]=="m"]
+# print(df.loc[ df['Name'].isin(employ) , : ])
+#===========================================================================================
+
+#Display every alternate row.
+#print(df.iloc[3:17:2])
+#print(df.iloc[::2])
+
+#===========================================================================================
+
+#Display every alternate column.
+#print(df.iloc[: , ::2])
+
+#===========================================================================================
+#Reverse the DataFrame.
+# reversed_row = df.iloc[::-1 , :] #df.iloc[row_selection, column_selection]
+# reversed_column = df.iloc[: , ::-1]
+
+# reversed_table = df.iloc[::-1 , ::-1]
+# print(reversed_table)
+
+#=============================================================================================
+#Find employees whose Salary is greater than Score × 1000.
+#print(df.loc[df['Salary'] > df['Score']*1000 , : ])
+#===========================================================================================
+#Find the youngest employee having the highest Salary.
+#print(df.sort_values(by= 'Age Salary'.split() , ascending=[True,False]).head(1))
+
+#===========================================================================================
+#Find the employee with the highest salary.
+
+#print(df.loc[df["Salary"].idxmax()])
+#print(df.loc[1005])
+ #--------> WE CAN PASS THE INDEX NAME OF THE ROW INSIDE THE LOC[ ] IN ORDERT TO GET THIS TYPE OF OUTPUT
+"""
+OUTPUT:
+
+Name                        Hasan
+Gender                       Male
+Age                            24
+Dept                    Marketing
+Position        Marketing Officer
+Experience                      5
+Salary                      50000
+Working_Hour                    9
+Score                          88
+City                     Rajshahi
+Status                     Active
+Name: 1005, dtype: object
+
+"""
+#===========================================================================================
+#Display only those rows where Age is equal to the median Age.
+#print(df['Age'].median())
+#print(df.loc[ df['Age'] == df['Age'].median(), : ])
+
+#===========================================================================================
+#Without changing the original DataFrame, create a report containing only Name, Department and Salary sorted by Salary.
+# report= df.loc[ : , 'name,dept,salary'.title().split(",")]
+# print(report.sort_values(by=['Salary'] ))
+
+
+#===========================================================================================
+#Display employees having duplicate Age values.
+# ages = sorted(df['Age'])
+# duplicate = []
+# for i in range(len(ages)-1):
+#     if ages[i] == ages[i+1] and ages[i] not in duplicate:
+#         duplicate.append(ages[i])
+# print(df[df['Age'].isin(duplicate)])
+
+# another way of solution,,,,
+
+#print(df.loc[ df.duplicated(subset=["Age"], keep=False) , : ].sort_values(by='Age'))
+
+#===========================================================================================
+#Find the employee whose Salary is closest to 40000.
+# print(list(reversed(sorted(df['Salary']))))
+# print(df.sort_values(by='salary score'.title().split() , ascending=[True , False]).loc[df['Salary'].between(35000,45000)])
+
+#==========================================================================================================
+
+#You are given a DataFrame with random indexes. Produce a report sorted by Salary while preserving the original DataFrame unchanged.
+# report = df.sort_values(by='salary'.title()  , ascending=False)
+# print(report)
+
+#====================================================================================================================
+#Return the top three youngest employees from the CSE department.
+#print(df.sort_values(by='dept age'.title().split() , ascending=[True,True]))
+print(df.sort_values(by='dept age'.title().split() , ascending=True).loc[ df['Dept'].isin(['CSE']) , : ])
+
+
+
+
+
+
+
+
+
+
 
 
 

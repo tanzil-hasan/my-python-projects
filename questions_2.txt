@@ -2,50 +2,7 @@
 
 🟠 HARD (16–35)
 
-22.
 
-
-23.
-
-Find employees whose Score is among the top five highest scores.
-
-24.
-
-Display employees whose Salary lies between 30000 and 45000.
-
-25.
-
-Find employees whose Department starts with the letter "C".
-
-26.
-
-Display employees whose Name ends with the letter "m".
-
-27.
-
-Display every alternate row.
-
-28.
-
-Display every alternate column.
-
-29.
-
-Reverse the DataFrame.
-
-30.
-
-Find employees whose Salary is greater than Score × 400.
-
-31.
-
-Find the youngest employee having the highest Salary.
-
-32.
-
-Display only those rows where Age is equal to the median Age.
-
-33.
 
 Display employees having duplicate Age values.
 
@@ -53,9 +10,6 @@ Display employees having duplicate Age values.
 
 Find the employee whose Salary is closest to 40000.
 
-35.
-
-Without changing the original DataFrame, create a report containing only Name, Department and Salary sorted by Salary.
 
 🔴 FAANG INTERVIEW LEVEL (36–60)
 36.
